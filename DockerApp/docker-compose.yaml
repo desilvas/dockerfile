@@ -1,0 +1,10 @@
+version: '3'
+services:
+ web:
+  image: nginx
+  container_name: nginx_server
+  ports:
+    -"9090:80"	
+ db:
+  image: mongo:3.0.15
+  container_name: sample_db
